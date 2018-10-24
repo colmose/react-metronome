@@ -1,0 +1,63 @@
+.Knob {
+    width: 60px;
+    height: 60px;
+    background: #eee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+.Knob-label {
+  flex: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.Knob:focus {
+  outline: none;
+}
+
+.Knob-value {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  text-align: center; 
+}
+
+.Knob-value::-webkit-inner-spin-button,
+.Knob-value::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Knob-spinner {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(54, 111, 196);
+  border: 1px solid rgb(113, 110, 156);
+  border-radius: 50%;
+  z-index: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Knob-spinner::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 1px solid rgb(113, 110, 156);
+  background: rgb(184, 151, 151);
+}
+
