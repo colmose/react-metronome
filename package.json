@@ -1,6 +1,9 @@
 {
   "name": "react-metronome",
   "version": "0.1.0",
+  "description": "Small metronome app",
+  "author": "Colm O'Shea <colmose@gmail.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
